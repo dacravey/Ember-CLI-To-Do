@@ -1,7 +1,7 @@
 {{input type="text" id="new-todo" placeholder="Add a new task"
 value=newTitle action="createTodo"}}
 
-<section id="main">
+<!-- <section id="main">
 
 <ul id="todo-list">
   {{#each itemController="todo"}}
@@ -19,6 +19,12 @@ value=newTitle action="createTodo"}}
 </ul>
 
   <input type="checkbox" id="toggle-all">
+</section> -->
+
+
+<section id="main">
+    {{outlet}}
+    <input type="checkbox" id="toggle-all">
 </section>
 
 <footer id="footer">
